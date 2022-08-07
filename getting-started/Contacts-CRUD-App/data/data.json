@@ -1,1 +1,56 @@
-[{"nama":"John Doe","alamat":"Surabaya, Jawa Timur","noTelepon":"08123456789","email":"johndoe08@mymail.com"},{"nama":"Fadlan","alamat":"Pemalang","noTelepon":"08123456789","email":"fadlanerman6@gmail.com"}]
+[
+    {
+        "nama": "John Doe",
+        "alamat": "Surabaya, Jawa Timur",
+        "noTelepon": "08123456789",
+        "email": "johndoe08@mymail.com"
+    },
+    {
+        "nama": "Fadlan",
+        "alamat": "Pemalang",
+        "noTelepon": "08123456789",
+        "email": "fadlanerman6@gmail.com"
+    },
+    {
+        "nama": "Doddy Ferdiansyah",
+        "alamat": "Jawa Barat",
+        "noTelepon": "08123654987",
+        "email": "doddyferdiansyah@mymail.com"
+    },
+    {
+        "nama": "Erik Doank",
+        "alamat": "Jawa Barat",
+        "noTelepon": "08987654321 ",
+        "email": "erik@mailmail.com"
+    },
+    {
+        "nama": "Dwi Artanto",
+        "alamat": "Jawa Timur",
+        "noTelepon": "08546879213",
+        "email": "kucingsholat@jpeg.com"
+    },
+    {
+        "nama": "maling pangsit",
+        "alamat": "aceh",
+        "noTelepon": "0111222333",
+        "email": "howee@maling.com"
+    },
+    {
+        "nama": "oomaga",
+        "alamat": "pulau orang",
+        "noTelepon": "08999555111",
+        "email": "orang@posting.net"
+    },
+    {
+        "nama": "Sepiring ajah",
+        "alamat": "asdfjkl;",
+        "noTelepon": "123748375",
+        "email": "nfaini@gmail.com"
+    },
+    {
+        "nama": "asfklgkqe",
+        "alamat": "asdkge",
+        "noTelepon": "048484",
+        "email": ""
+    }
+]
