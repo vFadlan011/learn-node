@@ -4,24 +4,26 @@ const rl = readline.createInterface({
     input:process.stdin,
     output:process.stdout,
 })
+const dataURL = './data/data.json';
 
-const data = fs.readFileSync('./07-contact-app-data.json', 'utf-8');
+if (!fs.existsSync(dataURL)){
+    fs.writeFileSync(dataURL, '[]', 'utf-8')
+}
+
+const data = fs.readFileSync(dataURL, 'utf-8');
 const contacts = JSON.parse(data);
 
 let contact = {};
 
-rl.question('Masukkan Nama : ', (jwbNama) => {
-    rl.question('Masukkan Alamat : ', (jwbAlamat) => {
-        rl.question('Masukkan Nomor Telepon : ', (jwbNoTelepon) => {
-            rl.question('Masukkan E-Mail : ', (jwbEmail) => {
-                contact.nama = jwbNama;
-                contact.alamat = jwbAlamat;
-                contact.noTelepon = jwbNoTelepon;
-                contact.email = jwbEmail;
+rl.question('Masukkan Nama : ', (nama) => {
+    rl.question('Masukkan Alamat : ', (alamat) => {
+        rl.question('Masukkan Nomor Telepon : ', (noTelepon) => {
+            rl.question('Masukkan E-Mail : ', (email) => {
+                contact = {nama, alamat, noTelepon, email};
                 
                 contacts.push(contact);
 
-                fs.writeFile('./07-contact-app-data.json', JSON.stringify(contacts), (err, data) => {
+                fs.writeFile(dataURL, JSON.stringify(contacts), (err, data) => {
                     if (err) throw err;
                     
                     console.log(`Kontak ditambahkan dengan:
